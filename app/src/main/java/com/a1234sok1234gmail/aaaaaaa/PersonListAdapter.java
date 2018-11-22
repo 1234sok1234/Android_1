@@ -65,7 +65,7 @@ public class PersonListAdapter extends ArrayAdapter<Obje>
 			tvtype.setText("średnica");
 			c++;
 			ck=ck+Float.parseFloat(field);
-			Log.d(AppSe.tagg, Float.toString(ck));
+			//Log.d(AppSe.tagg, Float.toString(ck));
 			//cx.setText(c);
 		} else if (name == "square")
 		{
