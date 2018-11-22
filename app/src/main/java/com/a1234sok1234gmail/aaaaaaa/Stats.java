@@ -26,24 +26,25 @@ public class Stats extends AppCompatActivity
 	TextView outputt2;
 	TextView outputs2;
 	TextView outputc2;
+	//zmiany
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_stats);
-		Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar3);
+		Toolbar mToolbar =  findViewById(R.id.toolbar3);
 		mToolbar.setNavigationIcon(R.drawable.ic_arrow);
 		mToolbar.setTitle(R.string.menu_stats);
 		setSupportActionBar(mToolbar);
-		outputt = (TextView) findViewById(R.id.textView6);
-		outputs = (TextView) findViewById(R.id.textView7);
-		outputc = (TextView) findViewById(R.id.textView8);
-		outputt1 = (TextView) findViewById(R.id.textView61);
-		outputs1 = (TextView) findViewById(R.id.textView71);
-		outputc1 = (TextView) findViewById(R.id.textView81);
-		outputt2 = (TextView) findViewById(R.id.textView62);
-		outputs2 = (TextView) findViewById(R.id.textView72);
-		outputc2 = (TextView) findViewById(R.id.textView82);
+		outputt =  findViewById(R.id.textView6);
+		outputs =  findViewById(R.id.textView7);
+		outputc =  findViewById(R.id.textView8);
+		outputt1 =  findViewById(R.id.textView61);
+		outputs1 =  findViewById(R.id.textView71);
+		outputc1 =  findViewById(R.id.textView81);
+		outputt2 =  findViewById(R.id.textView62);
+		outputs2 =  findViewById(R.id.textView72);
+		outputc2 = findViewById(R.id.textView82);
 		dbHandler = new MyDBHandler(this, null, null, 1);
 		printDatabase();
 	}
@@ -62,9 +63,6 @@ public class Stats extends AppCompatActivity
 			this.finish();
 			//Intent intent = new Intent("android.intent.action.Settings");
 			//startActivity(intent);
-		}else
-		{
-
 		}
 		return super.onOptionsItemSelected(item);
 	}
