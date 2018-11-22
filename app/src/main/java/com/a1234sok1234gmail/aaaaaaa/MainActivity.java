@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity
 	public float x1, x2;
 	public String c1, c2;
 	private int x;
+	private int x0;
 	private int s = 0;
 	private int t = 0;
 	private int c = 0;
@@ -243,8 +244,9 @@ public class MainActivity extends AppCompatActivity
 				return true;
 			case 2:
 				dodaj(lll);
-				policznanowo(x);
-				x++;
+				x0=x+1;
+				policznanowo(x0);
+
 				//Toast.makeText(this, "Option 2 selected", Toast.LENGTH_SHORT).show();
 				return true;
 			default:
@@ -254,7 +256,7 @@ public class MainActivity extends AppCompatActivity
 
 	private void dodaj(int cccp)
 	{
-
+		x++;
 		peopleList.add(peopleList.get(cccp));
 		adapter.notifyDataSetChanged();
 
