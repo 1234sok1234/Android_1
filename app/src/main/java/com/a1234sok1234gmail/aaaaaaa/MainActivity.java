@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity
 {
 	private static String tag = "void";
 	//private static ImageView imgview;
+	//no ciekawy czy zaziala
 	MyDBHandler dbHandler;
 	private ArrayList<Obje> peopleList;
 	private PersonListAdapter adapter;
