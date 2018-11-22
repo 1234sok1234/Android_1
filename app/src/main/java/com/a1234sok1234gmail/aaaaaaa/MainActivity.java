@@ -212,14 +212,15 @@ public class MainActivity extends AppCompatActivity
 	public void x2(View view)
 	{
 		//Log.d(AppSe.tagg, "x2");
-		sortattri();
+
+		sortfield();
 
 	}
 
 	public void x3(View view)
 	{
 		//Log.d(AppSe.tagg, "x3");
-		sortfield();
+		sortattri();
 	}
 
 	@Override
