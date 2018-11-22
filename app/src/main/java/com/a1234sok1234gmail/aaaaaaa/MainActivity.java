@@ -160,21 +160,21 @@ public class MainActivity extends AppCompatActivity
 		ti = (int) Math.round(th * 1000) / (float) 1000;
 		ci = (int) Math.round(ch * 1000) / (float) 1000;
 
-		productsDB = new ProductsDB(Integer.toString(s));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Integer.toString(t));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Integer.toString(s));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Integer.toString(c));
 		dbHandler.addProduct(productsDB);
-		productsDB = new ProductsDB(Float.toString(sl));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(tl));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Float.toString(sl));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(cl));
 		dbHandler.addProduct(productsDB);
-		productsDB = new ProductsDB(Float.toString(si));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(ti));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Float.toString(si));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(ci));
 		dbHandler.addProduct(productsDB);
@@ -238,11 +238,13 @@ public class MainActivity extends AppCompatActivity
 
 				usun(lll);
 				policznanowo(x);
-
+				x--;
 				//Toast.makeText(this, "Option 1 selected", Toast.LENGTH_SHORT).show();
 				return true;
 			case 2:
 				dodaj(lll);
+				policznanowo(x);
+				x++;
 				//Toast.makeText(this, "Option 2 selected", Toast.LENGTH_SHORT).show();
 				return true;
 			default:
@@ -252,7 +254,8 @@ public class MainActivity extends AppCompatActivity
 
 	private void dodaj(int cccp)
 	{
-		peopleList.get(cccp);
+
+		peopleList.add(peopleList.get(cccp));
 		adapter.notifyDataSetChanged();
 
 	}
@@ -319,25 +322,24 @@ public class MainActivity extends AppCompatActivity
 		productsDB = new ProductsDB(k[3]);
 		dbHandler.addProduct(productsDB);
 
-		productsDB = new ProductsDB(Integer.toString(s));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Integer.toString(t));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Integer.toString(s));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Integer.toString(c));
 		dbHandler.addProduct(productsDB);
-		productsDB = new ProductsDB(Float.toString(ss));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(tt));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Float.toString(ss));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(cc));
 		dbHandler.addProduct(productsDB);
-		productsDB = new ProductsDB(Float.toString(sss));
-		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(ttt));
+		dbHandler.addProduct(productsDB);
+		productsDB = new ProductsDB(Float.toString(sss));
 		dbHandler.addProduct(productsDB);
 		productsDB = new ProductsDB(Float.toString(ccc));
 		dbHandler.addProduct(productsDB);
-		x = x - 1;
 	}
 
 	private void sortFigure()
