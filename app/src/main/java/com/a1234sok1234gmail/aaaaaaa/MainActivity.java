@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity
 	{
 		super.onCreateContextMenu(menu, v, menuInfo);
 		menu.add(1, 1, 1, "Usuń");
-		menu.add(1, 2, 2, "Dupliku");
+		menu.add(1, 2, 2, "Duplikuj");
 
 	}
 
